@@ -1,5 +1,6 @@
-import React from "react";
+/* import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 interface Props {
   heading: string;
@@ -8,14 +9,126 @@ interface Props {
 
 const Hero = ({ heading, message }: Props) => {
   return (
-    <div className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
-      <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]" />
-      <div className="p-5 text-white z-[2] mt-[-10rem]">
-        <h2 className="text-5xl font-bold">{heading}</h2>
-        <p className="py-5 text-xl">{message}</p>
-        <Link href="/#portfolio" passHref>
-          <button className="px-8 py-2 border">Here</button>
-        </Link>
+    <div className="flex h-screen pt-16">
+      <div className="w-1/2 relative">
+        <Image
+          src="/home_page.jpg"
+          alt="Home page image"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+      <div className="w-1/2 flex items-center justify-center bg-[#d5c29a]">
+        <div className=" text-center flex flex-col justify-center items-center">
+          
+        <Image
+            src="/daycare-logo.jpg"
+            alt="Daycare Logo"
+            width={200}
+            height={200}
+            className="mb-5"
+ 
+          />
+          <h2 className="text-5xl font-bold text-gray-800">{heading}</h2>
+          <p className="py-5 text-xl text-gray-600">{message}</p>
+          <Link href="/#portfolio" passHref>
+            <button className="px-8 py-2 border border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white transition-colors">Here</button>
+          </Link> 
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Hero; */
+/* import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+
+interface Props {
+  heading: string;
+  message: string;
+}
+
+const Hero = ({ heading, message }: Props) => {
+  return (
+    <div className="flex h-screen pt-16">
+      <div className="w-1/2 relative">
+        <Image
+          src="/home_page.jpg"
+          alt="Home page image"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+      <div className="w-1/2 flex items-center justify-center bg-[#d5c29a]">
+        <div className="text-center flex flex-col justify-center items-center">
+          <Image
+            src="/daycare-logo.jpg"
+            alt="Daycare Logo"
+            width={200}
+            height={200}
+            className="mb-5"
+          />
+
+          <p className="text-2xl font-semibold text-gray-700">40+ years of experience</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Hero; */
+import React from "react";
+import Image from "next/image";
+
+interface Props {
+  heading: string;
+  message: string;
+}
+
+const Hero = ({ heading, message }: Props) => {
+  return (
+    <div className="flex h-[calc(100vh-4rem)] pb-4">
+      {/* Image Grid Section (3/4 width) */}
+      <div className="w-3/4 bg-white px-4 relative overflow-hidden ">
+        <div className="grid grid-cols-3 gap-4 h-full">
+          <div className="col-span-1 row-span-3 relative rounded-lg overflow-hidden">
+            <Image src="/home_page.jpg" alt="Home page" layout="fill" objectFit="cover" />
+          </div>
+          <div className="relative rounded-lg overflow-hidden">
+            <Image src="/grid1.jpeg" alt="Grid 1" layout="fill" objectFit="cover" />
+          </div>
+          <div className="relative rounded-lg overflow-hidden">
+            <Image src="/grid22.jpeg" alt="Grid 2" layout="fill" objectFit="cover" />
+          </div>
+          <div className="relative rounded-lg overflow-hidden">
+            <Image src="/grid3.jpeg" alt="Grid 3" layout="fill" objectFit="cover" />
+          </div>
+          <div className="relative rounded-lg overflow-hidden">
+            <Image src="/grid4.jpeg" alt="Grid 4" layout="fill" objectFit="cover" />
+          </div>
+          <div className="relative rounded-lg overflow-hidden">
+            <Image src="/grid5.jpeg" alt="Grid 5" layout="fill" objectFit="cover" />
+          </div>
+          <div className="relative rounded-lg overflow-hidden">
+            <Image src="/grid6.jpeg" alt="Grid 6" layout="fill" objectFit="cover" />
+          </div>
+        </div>
+      </div>
+
+      {/* Logo and Experience Section (1/4 width) */}
+      <div className="w-1/4 flex items-center justify-center bg-[#d5c29a] rounded-xl">
+        <div className="text-center flex flex-col justify-center items-center">
+          <Image
+            src="/daycare-logo.jpg"
+            alt="Daycare Logo"
+            width={200}
+            height={200}
+            className="mb-5"
+          />
+          <p className="text-xl font-semibold text-gray-700">40+ years of experience</p>
+        </div>
       </div>
     </div>
   );
