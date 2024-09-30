@@ -1,42 +1,3 @@
-/* import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-
-interface Testimonial {
-  name: string;
-  review: string;
-}
-
-const testimonials: Testimonial[] = [
-  { name: "John Doe", review: "Ana Prado's daycare is amazing! Our child loves it there." },
-  { name: "Jane Smith", review: "We couldn't be happier with the care our daughter receives." },
-  { name: "Mike Johnson", review: "The best daycare in Edmond. Highly recommended!" },
-];
-
-const Testimonials: React.FC = () => {
-  return (
-    <div className="bg-white py-12">
-      <h2 className="text-3xl font-bold text-center mb-8">What Parents Say</h2>
-      <Carousel
-        autoPlay
-        infiniteLoop
-        showStatus={false}
-        showIndicators={false}
-        showThumbs={false}
-        interval={5000}
-      >
-        {testimonials.map((testimonial, index) => (
-          <div key={index} className="bg-[#909cce] p-6 mx-auto max-w-2xl rounded-lg shadow-md">
-            <p className="text-white italic mb-4">"{testimonial.review}"</p>
-            <p className="text-white font-semibold">- {testimonial.name}</p>
-          </div>
-        ))}
-      </Carousel>
-    </div>
-  );
-};
-
-export default Testimonials; */
 import React from 'react';
 
 interface Testimonial {
@@ -57,7 +18,7 @@ const Testimonials: React.FC = () => {
       <div className="flex flex-row gap-4 px-4 max-w-7xl mx-auto">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="bg-[#909cce] p-6 rounded-lg shadow-md flex-1">
-            <p className="text-black mb-4">"{testimonial.review}"</p>
+            <p className="text-black mb-4">&quot;{testimonial.review}&quot;</p>
             <p className="text-black font-semibold">- {testimonial.name}</p>
           </div>
         ))}

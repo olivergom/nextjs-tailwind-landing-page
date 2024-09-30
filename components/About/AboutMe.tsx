@@ -9,7 +9,7 @@ const AboutMe: React.FC = () => {
         </div>
         <div className="w-2/3">
           <p className="text-gray-600 text-xl">
-            Ana grew up as the oldest of 8 siblings in rural El Salvador where she took care of her brother's and sisters from the age of 4 years old. She immigrated to the US where her first job was taking care of children and learning English. Since then she has taken care of over 50 kids from 20+ families over the last 40 years. Ana has two kids herself and understands the hard work it takes to raise them well! She is a deeply caring person who genuinely loves to see each child as they walk in to her doors every day. They are the light of her world and she wouldn't trade it for anything.
+            Ana grew up as the oldest of 8 siblings in rural El Salvador where she took care of her brother&apos;s and sisters from the age of 4 years old. She immigrated to the US where her first job was taking care of children and learning English. Since then she has taken care of over 50 kids from 20+ families over the last 40 years. Ana has two kids herself and understands the hard work it takes to raise them well! She is a deeply caring person who genuinely loves to see each child as they walk in to her doors every day. They are the light of her world and she wouldn&apos;t trade it for anything.
           </p>
         </div>
       </div>

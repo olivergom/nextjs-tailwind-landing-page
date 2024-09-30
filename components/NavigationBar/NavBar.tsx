@@ -83,7 +83,6 @@ const NavBar = () => {
 
 export default NavBar; */
 import Link from "next/link";
-import Image from "next/image";
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
@@ -101,7 +100,7 @@ const NavBar = () => {
           
           <Link href="/">
             <h1 className="font-bold text-4xl -ml-10">
-              Ana Prado's Home Daycare
+              Ana Prado&apos;s Home Daycare
             </h1>
           </Link>
         </div>
